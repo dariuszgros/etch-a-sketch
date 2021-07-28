@@ -10,40 +10,41 @@
   </head>
   <body>
     <header>
-      <h1 class="title">Etch-a-Sketch</h1>
+      <h1 class="title">Etch A Sketch</h1>
     </header>
 
     <main class="main-content">
       <div class="description">
-        <p>Description of the game</p>
+        <p>Choose your color and start drawing! <br>
+        For restart - press reset or change grid size.</p>
       </div>
 
       <div class="settings">
-        <div class="color-button">
-          <button class="color-button">Red</button>
-          <button class="color-button">Blue</button>
+        <div class="color-buttons">
+          <button type="button" class="black rectangle">Black</button>
+          <button type="button" class="white rectangle">White</button>
         </div>
         <div>
-            <button class="reset">Reset</button>
-        </div>
-        <div>
-          <button class="color-button">Green</button>
-          <button class="color-button">Black</button>
-        </div>
-          <div class="slider">
-            <input
-              class="size-slider"
-              type="range"
-              value="16"
-              min="2"
-              max="64"
-            />
+          <div class="color-picker">
+            <input type="color" id="color">
+            <p>Choose your color</p>
           </div>
+        <div class="slider-with-value">
+          <input type="range" min="2" max="64" id="slider">
+          <p class="value">16</p>
         </div>
+      </div>
+        <div class="color-buttons">
+          <button type="button" class="random rectangle">Random</button>
+          <button type="button" class="eraser rectangle">Erase</button>
+        </div>
+    </div>
 
         <div class="game-container">
           Game container
-          <div class="grid-container">grid container</div>
+          <div class="grid-container">
+            grid container
+          </div>
         </div>
       </div>
     </main>
