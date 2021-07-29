@@ -14,38 +14,33 @@
     </header>
 
     <main class="main-content">
-      <div class="description">
-        <p>Choose your color and start drawing! <br>
-        For restart - press reset or change grid size.</p>
-      </div>
+      <!-- <div class="description">
+        <p>
+          Choose your color and start drawing! <br />
+          For restart - press reset or change grid size.
+        </p>
+      </div> -->
 
       <div class="settings">
         <div class="color-buttons">
-          <button type="button" class="black rectangle">Black</button>
-          <button type="button" class="white rectangle">White</button>
+          <button type="button" class="black buttons">Black</button>
+          <button type="button" class="white buttons">White</button>
         </div>
-        <div>
-          <div class="color-picker">
-            <input type="color" id="color">
-            <p>Choose your color</p>
-          </div>
-        <div class="slider-with-value">
-          <input type="range" min="2" max="64" id="slider">
-          <p class="value">16</p>
+        <div class="color-picker">
+          <p class="choose-color-text">Choose your color:</p>
+          <input type="color" id="color" />
+        </div>
+        <div class="color-buttons">
+          <button type="button" class="random buttons">Random</button>
+          <button type="button" class="eraser buttons">Erase</button>
         </div>
       </div>
-        <div class="color-buttons">
-          <button type="button" class="random rectangle">Random</button>
-          <button type="button" class="eraser rectangle">Erase</button>
-        </div>
-    </div>
 
-        <div class="game-container">
-          Game container
-          <div class="grid-container">
-            grid container
-          </div>
-        </div>
+      <div class="game-container">Game container</div>
+      <div class="slider-with-value">
+        <label for="slider">Select grid size:</label>
+        <input type="range" value="16" min="2" max="64" id="slider" />
+        <p class="value">16</p>
       </div>
     </main>
   </body>
