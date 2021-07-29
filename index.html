@@ -14,13 +14,6 @@
     </header>
 
     <main class="main-content">
-      <!-- <div class="description">
-        <p>
-          Choose your color and start drawing! <br />
-          For restart - press reset or change grid size.
-        </p>
-      </div> -->
-
       <div class="settings">
         <div class="color-buttons">
           <button type="button" class="black buttons">Black</button>
@@ -32,16 +25,17 @@
         </div>
         <div class="color-buttons">
           <button type="button" class="random buttons">Random</button>
-          <button type="button" class="eraser buttons">Erase</button>
+          <button type="button" class="reset buttons">Reset</button>
         </div>
       </div>
 
-      <div class="game-container">Game container</div>
+      <div class="game-container"></div>
       <div class="slider-with-value">
         <label for="slider">Select grid size:</label>
-        <input type="range" value="16" min="2" max="64" id="slider" />
+        <input type="range" value="16" min="2" max="50" id="slider" />
         <p class="value">16</p>
       </div>
     </main>
   </body>
+  <script src="scripts/main.js"></script>
 </html>
