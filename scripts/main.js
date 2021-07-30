@@ -4,6 +4,7 @@ const whiteColor = document.querySelector(".white");
 const pickColor = document.getElementById("color");
 const randomColor = document.querySelector(".random");
 const resetButton = document.querySelector(".reset");
+const sizeValue = document.querySelector(".value");
 
 let colorPick = [];
 let colorTheme = [];
@@ -22,6 +23,7 @@ function divCreate(sliderValue) {
     gameContainer.appendChild(newDiv);
   }
   gameContainer.addEventListener("click", toggleDrawing);
+  sizeValue.innerHTML = `${sliderValue}`;
 }
 divCreate(16);
 
