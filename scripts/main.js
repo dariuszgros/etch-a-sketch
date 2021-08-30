@@ -67,7 +67,7 @@ function optionChoice(e) {
       e.target.style.backgroundColor = colorPick;
       break;
     case "color":
-      let userColor = document.getElementById("userColor");
+      let userColor = document.getElementById("color");
       userColor = userColor.value;
       e.target.style.backgroundColor = userColor;
       break;
